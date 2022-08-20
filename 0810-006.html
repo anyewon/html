@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0810-ani</title>
+    <style>
+        .cls001{
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            animation-name: ani; /*애니메이션의 이름*/
+            animation-duration: 2s;/*애니메이션이 동작하는 시간*/
+            animation-iteration-count: infinite;/*애니메이션이 반복되어지는 횟수*/
+            animation-direction: normal;/*애니메이션이 진행되는 방향*/
+            animation-timing-function: linear;/*애니메이션 속도 곡선*/
+            animation: ani 2s infinite normal linear;/*한줄로 쓸 때*/
+            top: 0;
+            left: 0;
+        }
+        @keyframes ani{
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: 500px;
+            }
+            50%{
+                top: 500px;
+                left: 500px;
+            }
+            75%{
+                top: 500px;
+                left: 0;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cls001">
+
+    </div>
+</body>
+</html>

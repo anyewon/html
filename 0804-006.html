@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+    <style>
+        body{
+            margin: 100px;
+        }
+        #bigbox{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .smallbox1{
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .smallbox2{
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .smallbox3{
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .smallbox4{
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .smallbox5{
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="bigbox">
+        <div class="smallbox1"></div>
+        <div class="smallbox2"></div>
+        <div class="smallbox3"></div>
+        <div class="smallbox4"></div>
+        <div class="smallbox5"></div>
+    </div>
+</body>
+</html>

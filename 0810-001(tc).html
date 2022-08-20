@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃</title>
+    <style>
+        #wrapper{
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header{
+            width: 100%;
+            height: 150px;
+            /* background-image: url(images/nav2.png);
+            background-repeat: no-repeat;
+            background-color: pink; */
+            background: #f46075 url(images/nav2.png) no-repeat;
+            background-position: right center;
+        }
+        header nav{
+            float: left;
+            width: 600px;
+            margin-top: 50px;
+        }
+        nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li{
+            display: inline-block;
+            float: left;
+            font-weight: 600;
+            margin: 30px 15px 15px 15px;
+            color: white;
+        }
+        li:first-child{
+            margin-left: 50px;
+        }
+        section{
+            float: left;
+            width: 580px;
+            padding: 5px;
+        }
+        section article{
+            width: 250px;
+            height: 220px;
+            float: left;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+        p{
+            font-size: 13px;
+        }
+        .at1, .at2, .at3, .at4{
+            transition: 2s;
+        }
+        .at1:hover{
+            background: orange;
+        }
+        .at2:hover{
+            background: red;
+        }
+        .at3:hover{
+            background: aqua;
+        }
+        .at4:hover{
+            background: yellowgreen;
+        }
+        aside{
+            border: 1px solid #333;
+            width: 200px;
+            height: auto;
+            margin-top: 81px;
+            float: right;
+        }
+        footer{
+            clear: both;
+            width: 100%;
+            height: 100px;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li>애완견 종류</li>
+                    <li>입양하기</li>
+                    <li>건강돌보기</li>
+                    <li>더불어살기</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h1>강아지 용품 준비하기</h1>
+            <article class="at1">
+                <h2>강아지 집</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aut aliquam obcaecati necessitatibus quod, eaque commodi optio nulla deserunt, dolorem ipsa unde, reprehenderit illo doloribus vitae iusto in?</p>
+            </article>
+            <article class="at2">
+                <h2>강아지 먹이</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aut aliquam obcaecati necessitatibus quod, eaque commodi optio nulla deserunt, dolorem ipsa unde, reprehenderit illo doloribus vitae iusto in?</p>
+            </article>
+            <article class="at3">
+                <h2>밥그릇, 물병</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aut aliquam obcaecati necessitatibus quod, eaque commodi optio nulla deserunt, dolorem ipsa unde, reprehenderit illo doloribus vitae iusto in?</p>
+            </article>
+            <article class="at4">
+                <h2>이름표, 목줄</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis aut aliquam obcaecati necessitatibus quod, eaque commodi optio nulla deserunt, dolorem ipsa unde, reprehenderit illo doloribus vitae iusto in?</p>
+            </article>
+        </section>
+        <aside>
+            <img src="images/1.png" alt="">
+            <img src="images/2.png" alt="">
+            <img src="images/3.png" alt="">
+        </aside>
+        <footer>
+            <p>copyright 2012 funny.com</p>
+        </footer>
+    </div>
+</body>
+</html>

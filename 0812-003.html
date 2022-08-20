@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropUP</title>
+    <style>
+        #wrapper{
+            position: relative;
+            width: 130px;
+            height: 80px;
+        }
+        .link{
+            width: 180px;
+            background: #ddd;
+            /* top: -80px; */
+            position: absolute;
+            display: none;
+        }
+        .link a{
+            text-decoration: none;
+            color: black;
+        }
+        .wrapper button:hover .link a{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <button>Dropup</button>
+        <div class="link">
+            <a href="#">Link1</a>
+            <a href="#">Link2</a>
+            <a href="#">Link3</a>
+        </div>
+    </div>
+</body>
+</html>

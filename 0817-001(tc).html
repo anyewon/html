@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ani form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: #333;
+        }
+        form{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 250px;
+            height: 150px;
+            margin-left: -125px;
+            margin-top: -75px;
+            animation: login 1s 1 linear forwards;
+        }
+        input{
+            margin-top: 7px;
+            padding-left: 20px;
+            width: 100%;
+            height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #444;
+            border: 1px solid rgba(0,0,0,0.2);
+            outline: none;
+            border-radius: 6px;
+            background: linear-gradient(180deg, #fff, #f2f2f2);
+            box-shadow: inset 0 2px 0 #d9d9d9;
+        }
+        input:focus{
+            box-shadow: inset 0 2px 0 #a7a7a7;
+        }
+        input:first-child{
+            margin-top: 0;
+        }
+        input[type="submit"]{
+            margin-top: 7px;
+            /* padding-left: 25px; */
+            width: 100%;
+            height: 50px;
+            background: linear-gradient(180deg, rgb(16, 78, 10), rgb(63, 151, 12));
+        }
+        input[type="submit"]:hover{
+            margin-top: 10px;
+            background: #79a100;
+            background: linear-gradient(180deg, #a9de08, #8cc007);
+        }
+        input[type="submit"]:active{
+            background: linear-gradient(180deg, #8ac007, rgb(118, 241, 18));
+        }
+        @keyframes login{
+            from{
+                transform: translateY(-50px);
+            }
+            to{
+                transform: translateY(-75px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="action.php">
+        <input type="text" placeholder="user id">
+        <input type="password" placeholder="password">
+        <input type="submit" value="LEARN CSS3">
+    </form>
+</body>
+</html>

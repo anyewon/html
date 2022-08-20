@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c649886365.js" crossorigin="anonymous"></script>
+    <title>검색창 만들기</title>
+    <style>
+        body{
+            background: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            overflow: hidden;
+            padding: 40px 60px;
+            background: #666;
+            width: 650px;
+            position: relative;    
+        }
+        input[type="text"]{
+            width: 250px;
+            background: #333;
+            height: 35px;
+            border: none;
+            outline: none;
+            border-radius: 25px;
+            padding-left: 50px;
+            /* position: relative; */
+            box-shadow: inset 2px 2px 3px rgba(0,0,0,0.5);
+            transition: 0.9s;
+        }
+        i{
+            position: absolute;
+            top: 50%;
+            left: 75px;
+            color: #fff;
+            transform: translateY(-50%);
+        }
+        ::placeholder{
+            font-size: 18px;
+            font-weight: 600;
+            text-shadow: 2px 2px 1px rgba(0,0,0,0.8);
+        }
+        input[type="text"]:focus{
+            width: 400px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cls001">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Custom Search">
+    </div>
+</body>
+</html>

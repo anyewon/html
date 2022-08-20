@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP</title>
+    <style>
+        /* #wrapper{
+            margin: 0 auto;
+        } */
+        .prod-list{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .prod-list li{
+            position: relative;
+            float: left;
+            padding: 0;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .prod-list img{
+            margin: 0;
+            padding: 0;
+            float: left;
+        }
+        .prod-list .caption{
+            position: absolute;
+            top: 200px;
+            width: 300px;
+            height: 200px;
+            background: rgba(0,0,0,0.6);
+            opacity: 0;
+            transition: 0.2s;
+        }
+        .prod-list li:hover .caption{
+            opacity: 1;
+            transform: translateY(-200px);
+        }
+        h1,p {
+            text-align: center;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <ul class="prod-list">
+            <li>
+                <img src="images/prod1.jpg" alt="">
+                <div class="caption">
+                    <h1>상품 1번</h1>
+                    <p>상품 1번 설명 텍스트</p>
+                    <p>가격: 12,324원</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/prod2.jpg" alt="">
+                <div class="caption">
+                    <h1>상품 2번</h1>
+                    <p>상품 2 설명 텍스트</p>
+                    <p>가격: 12,324원</p>
+                </div>
+            </li>
+            <li>
+                <img src="images/prod3.jpg" alt="">
+                <div class="caption">
+                    <h1>상품 3번</h1>
+                    <p>상품 3번 설명 텍스트</p>
+                    <p>가격: 12,324원</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

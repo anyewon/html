@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 선생님</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #wrapper,header,#left-aside,#content,#right-aside,footer{
+            border: 1px solid #ccc;
+        }
+        #wrapper {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+            /* border: 1px solid #ccc; */
+            padding: 20px;
+        }
+        header {
+            width: 920px;
+            height: 120px;
+            /* border: 1px solid #ccc; */
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+            line-height: 120px;
+            padding-left: 20px;
+        }
+        #left-aside {
+            width: 190px;
+            /* border: 1px solid #ccc; */
+            float: left;
+            padding: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        #content{
+            width: 495px;
+            float: left;
+            /* border: 1px solid #ccc; */
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        #right-aside{
+            width: 190px;
+            /* border: 1px solid #ccc; */
+            float: right;
+            padding: 20px;
+        }
+        footer{
+            width: 100%;
+            clear: both;
+            height: 180px;
+            /* border: 1px solid #ccc; */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>사이트 제목</h1>
+        </header>
+        <div id="left-aside">
+            <h2>사이드바</h2>
+            <ul>
+                <li>항목1</li>
+                <li>항목2</li>
+                <li>항목3</li>
+                <li>항목4</li>
+            </ul>
+        </div>
+        <div id="content">
+            <h2>본문</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident beatae quisquam minus. Iure nostrum, temporibus laborum ratione, voluptatum eos officiis officia modi numquam, nihil error dolorum. Eos, voluptas. Distinctio?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident beatae quisquam minus. Iure nostrum, temporibus laborum ratione, voluptatum eos officiis officia modi numquam, nihil error dolorum. Eos, voluptas. Distinctio?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem provident beatae quisquam minus. Iure nostrum, temporibus laborum ratione, voluptatum eos officiis officia modi numquam, nihil error dolorum. Eos, voluptas. Distinctio?</p>
+
+        </div>
+        <div id="right-aside">
+            <h2>사이드바</h2>
+            <ul>
+                <li>항목1</li>
+                <li>항목2</li>
+                <li>항목3</li>
+                <li>항목4</li>
+            </ul>
+        </div>
+        <footer>
+            <h2>푸터</h2>
+            <p>저작권 정보</p>
+            <p>연락처 등</p>
+        </footer>
+    </div>
+</body>
+</html>

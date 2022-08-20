@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP 버튼 만들기</title>
+    <script src="https://kit.fontawesome.com/c649886365.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            height: 10000px;
+        }
+        #circle{
+            border-radius: 100px;
+            width: 50px;
+            height: 50px;
+            background: white;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            border: 4px solid #38a9f5;
+            margin: 0 auto;
+        }
+        .smallcircle{
+            position: absolute;
+            color: #38a9f5;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle">
+        <div class="smallcircle">
+            <i class="fa-solid fa-angle-up"></i><br>
+            <span>TOP</span>
+        </div>
+    </div>
+</body>
+</html>

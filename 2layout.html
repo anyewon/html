@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 연습</title>
+    <style>
+        #wrapper{
+            width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #333;
+            overflow: hidden;
+        }
+        header{
+            width: 100%;
+            height: 130px;
+            background: #34c9f3;
+        }
+        #logo{
+            width: 110px;
+            height: 100px;
+            float: left;
+            margin: 20px 0 0 20px;
+        }
+        img{
+            width: 110px;
+            height: 100px;
+        }
+        nav{
+            width: 800px;
+            height: 60px;
+            /* border: 1px solid black; */
+            float: right;
+            margin-top: 50px;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li{
+            display: inline-block;
+            background: #eee;
+            width: 100px;
+            height: 30px;
+            margin: 10px;
+            text-align: center;
+        }
+        section{
+            float: left;
+            width: 75%;
+        }
+        article{
+            width: 200px;
+            height: 150px;
+            background: #1673e6;
+            float: left;
+            margin: 5px;
+        }
+        #right-aside{
+            width: 20%;
+            height: 400px;
+            background: #4f38eb;
+            float: right;
+            margin-top: 5px;
+        }
+        footer{
+            clear: both;
+            background: #9a0ae7;
+            height: 150px;
+            padding-top: 40px;
+            box-sizing: border-box;
+        }
+        address{
+            text-align: center;
+            color: #eee;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">
+                <img src="images/001.jpg" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>jQuery</li>
+                    <li>JAVASCRIPT</li>
+                    <li>Portofolio</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </section>
+        <div id="right-aside">
+
+        </div>
+        <footer>
+            <address>인천광역시</address>
+        </footer>
+    </div>
+</body>
+</html>

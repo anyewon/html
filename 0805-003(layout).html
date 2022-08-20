@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2단 레이아웃 잡기</title>
+    <style>
+        #wrapper{
+            width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 1px solid #333;
+        }
+        header{
+            width: 100%;
+            height: 130px;
+            background: yellow;
+        }
+        #logo{
+            float: left;
+            width: 180px;
+            height: 40px;
+            margin: 30px 0 0 30px;
+        }
+        img{
+            width: 150px;
+            height: 65px;
+        }
+        nav{
+            float: right;
+            /* border: 1px solid #333; */
+            width: 650px;
+            height: 60px;
+            margin-top: 50px;
+        }
+        ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: inline-block;
+            width: 120px;
+            height: 30px;
+            background: orange;
+            text-align: center;
+        }
+        section{
+            float: left;
+            width: 75%;
+        }
+        article{
+            width: 200px;
+            height: 150px;
+            background: red;
+            float: left;
+            margin: 10px;
+        }
+        #right-aside{
+            float: right;
+            width: 20%;
+            height: 250px;
+            background: blueviolet;
+            margin: 10px;
+        }
+        footer{
+            clear: both;
+            height: 150px;
+            background: orangered;
+            padding-top: 50px;
+            box-sizing: border-box;
+        }
+        address{
+            font-style: normal;
+            text-align: center;
+            color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">
+                <img src="images/001.jpg" alt="옴팡이이미지">
+            </div>
+
+            <nav>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>jQuery</li>
+                    <li>JAVASCRIPT</li>
+                    <li>Portofolio</li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </section>
+
+        <div id="right-aside">
+
+        </div>
+
+        <footer>
+            <address>서울시 강동구 올림픽로</address>
+        </footer>
+</div>
+</body>
+</html>

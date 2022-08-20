@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        #wrapper{
+            position: relative;
+            width: 800px;
+            height: 800px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        .cls001{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+        .box1{
+            background: red;
+            top: 50px;
+            left: 50px;
+            z-index: 3;
+        }
+        .box2{
+            background: yellow;
+            top: 120px;
+            left: 130px;
+            z-index: 2;
+        }
+        .box3{
+            background: orange;
+            top: 150px;
+            left: 170px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="cls001 box1">1</div>
+        <div class="cls001 box2">2</div>
+        <div class="cls001 box3">3</div>
+    </div>
+</body>
+</html>

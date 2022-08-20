@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션 top버튼</title>
+    <script src="https://kit.fontawesome.com/c649886365.js" crossorigin="anonymous"></script>
+    <style>
+        html,body{
+            scroll-behavior: smooth;
+        }
+        body{
+            height: 10000px;
+        }
+
+        #circle{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 2px solid black;
+            position: fixed;/*포지션 fixed 는 relative 역할을 대신할 수 있다.*/
+            right: 50px;
+            bottom: 50px;
+        }
+        .cls001{
+            position: absolute;
+            left: 50%;
+            /* top: 20px; */
+            transform: translate(-50%);
+        }
+        .cls002{
+            position: absolute;
+            left: 50%;
+            top: 25px;
+            transform: translateX(-50%);
+        }
+        a{
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle">
+        <a href="#">
+            <span class="cls001">
+                <i class="fa-solid fa-angle-up"></i>
+            </span>
+            <span class="cls002">
+                TOP
+            </span>
+        </a>
+    </div>
+</body>
+</html>
